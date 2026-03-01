@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.16",
+  "version": "1.0.0",
+  "id": "00000000-0000-0000-0000-000000000000",
+  "packageName": "com.prosperitylifegroup.inventoryguardian",
+  "developer": {
+    "name": "Prosperity Life Group",
+    "websiteUrl": "https://prosperitylifegroup.sharepoint.com",
+    "privacyUrl": "https://prosperitylifegroup.sharepoint.com",
+    "termsOfUseUrl": "https://prosperitylifegroup.sharepoint.com"
+  },
+  "name": {
+    "short": "Inventory Guardian",
+    "full": "Inventory Guardian"
+  },
+  "description": {
+    "short": "Inventory dashboard, adjustments, alerts, reports.",
+    "full": "Inventory Guardian is a Teams tab app for inventory visibility, stock adjustments, trends, alerts, and reporting."
+  },
+  "accentColor": "#B33A3A",
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "staticTabs": [
+    {
+      "entityId": "inventory-guardian",
+      "name": "Inventory Guardian",
+      "contentUrl": "https://YOUR_DOMAIN/index.html#/overview",
+      "websiteUrl": "https://YOUR_DOMAIN/index.html#/overview",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "YOUR_DOMAIN"
+  ]
+}
